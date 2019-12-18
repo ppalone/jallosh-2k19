@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Samarkan";
+    src: url("./fonts/samarkan.ttf") format("truetype");
+}
+/* Navbar */
+.navbar {
+    font-size: 18px;
+    background-color: #262626;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+}
+.logo {
+    padding: 10px;
+    font-size: 30px;
+}
+.nav-links, .logo {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.nav-links {
+    letter-spacing: 2px;
+}
+.main-nav li {
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.navbar-toggle {
+    display: inline;
+    float: right;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 30px;
+    padding: 10px;
+}
+.active {
+    display: block;
+}
+.logo:hover, .nav-links:hover {
+    color: white;
+    text-decoration: none;
+}
+/* Animating Content */
+#header {
+    background-color: #262626;
+    color: rgb(226, 225, 225);
+    text-align: center;
+    padding-bottom: 20px;
+    height: 720px;
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+#header h1 {
+    font-family: "Samarkan";
+    color: rgb(255, 131, 0);
+    font-size: 200px;
+    margin: 40px 0;
+    -moz-animation: jallosh-glow 1s ease-in-out infinite alternate;
+    -webkit-animation: jallosh-glow 1s ease-in-out infinite alternate;
+}
+#gcoea {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+#alumni, #presets {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}
+#header h5 {
+    font-size: 60px;
+    color: yellow;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 2px;
+    -moz-animation: batch-glow 1s ease-in-out infinite alternate;
+    -webkit-animation: batch-glow 1s ease-in-out infinite alternate;
+}#smooth-scroll-btn
+#read-more {
+    width: 120px;
+    margin: auto;
+    padding: 10px 0;
+}
+#read-more a {
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+#smooth-scroll-btn {
+    display: block;
+    padding: 10px 0;
+    width: 50px;
+    margin: auto;
+}
+#smooth-scroll-btn i {
+    padding-top: 0;
+    -moz-animation: updown 1s ease-in-out infinite alternate-reverse;
+    -webkit-animation: updown 1s ease-in-out infinite alternate-reverse;
+}
+
+@-moz-keyframes updown {
+    from {
+        padding-top: 0;
+    } 
+    to {
+        padding-top: 15px;
+    }
+}
+@-webkit-keyframes updown {
+    from {
+        padding-top: 0;
+    } 
+    to {
+        padding-top: 15px;
+    }
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+    #header {
+        height: 450px;
+    }
+    #header h1 {
+        font-size: 100px;
+        margin: 20px 0;
+    }
+    #gcoea {
+        font-size: 30px;
+    }
+    #alumni, #presets {
+        font-size: 20px;
+    }
+    #header h5 {
+        font-size: 28px;
+    }
+    .container-fluid {
+        padding: 10px 20px !important;
+    }
+}
+/* Animations */
+@-webkit-keyframes jallosh-glow {
+    from {
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 1.0);
+    } to {
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+    }
+}
+@-webkit-keyframes batch-glow {
+    from {
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 1.0);
+    } to {
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+    }
+}
+@-moz-keyframes jallosh-glow {
+    from {
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 1.0);
+    } to {
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+    }
+}
+@-moz-keyframes batch-glow {
+    from {
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 1.0);
+    } to {
+        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+    }
+}
+.container {
+    letter-spacing: 1px;
+}
+/* about section */
+#about {
+    margin: 20px 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: white;
+}
+#about h3 {
+    margin: 0;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    color: white;
+    background: #262626;
+    border-radius: 5px 5px 2px 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+#about p {
+    margin: 0;
+    padding: 10px;
+}
+#reg-btn-cont {
+    padding: 20px 0;
+    text-align: center;
+}
+#register-btn {
+    border: 1px solid #262626;
+    border-radius: 5px;
+    color: white;
+    background-color: #262626;
+    height: 40px;
+    padding: 10px 5px;
+}
+#register-btn:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: white;;
+}
+/* Gallery */
+#gallery  {
+    margin: 20px 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: white;
+}
+#gallery h3 {
+    margin: 0;
+    color: white;
+    background-color: #262626;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    border-radius: 5px 5px 2px 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+#gallery h5 {
+    margin: 0;
+    padding: 8px 10px;
+}
+#promo {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+/* Convenors */
+#convenors {
+    margin: 20px 0;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: white;
+}
+#convenors h3 {
+    margin: 0;
+    padding: 5px 10px;
+    color: white;
+    background-color: #262626;
+    letter-spacing: 2px;
+    border-radius: 5px 5px 2px 2px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container-fluid {
+    padding: 10px 40px;
+}
+.committee {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.row {
+    padding: 10px 0;
+}
+.col {
+    text-align: center;
+}
+.image-responsive {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 10px 0;
+}
+/* Footer */
+#footer {
+    color: white;
+    background:#262626;
+    text-align: right;
+    padding: 5px 0;
+    letter-spacing: 1px;
+    box-shadow: -1px 0 2px rgba(0 , 0, 0, 0.5);
+}
+.meet-us {
+    text-align: left;
+}
+.contact-us {
+    text-align: left;
+    font-size: 18px;
+}
+.contact-us a i {
+    font-size: 20px;
+    width: 18px;
+    height: 18px;
+}
+#love {
+    color: white;
+}
+#love a {
+    color: inherit;
+}
